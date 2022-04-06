@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-03-21" view-index="0" gantt-divider-location="320" resource-divider-location="300" version="3.2.3240" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-04-25" view-index="0" gantt-divider-location="292" resource-divider-location="300" version="3.2.3240" locale="it_IT">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="172" order="0"/>
-        <field id="tpd4" name="Data dinizio" width="66" order="1"/>
-        <field id="tpd5" name="Data di fine" width="66" order="2"/>
+        <field id="tpd3" name="Nome" width="156" order="0"/>
+        <field id="tpd4" name="Data dinizio" width="60" order="1"/>
+        <field id="tpd5" name="Data di fine" width="60" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#0000cc #00ff33 #ffff00 #ff6600]]>
@@ -37,10 +37,6 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="25" name="Annuncio Progetto" color="#8cb6ce" meeting="false" start="2022-03-10" duration="2" complete="100" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true">
-            <depend id="26" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="26" name="Annuncio di Progetto consegnato" color="#8cb6ce" meeting="true" start="2022-03-14" duration="0" complete="0" thirdDate="2022-03-09" thirdDate-constraint="0" expand="true"/>
         <task id="0" name="Comunicazione" color="#8cb6ce" meeting="false" start="2022-03-17" duration="20" complete="64" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
             <task id="8" name="preparazione incontro" color="#8cb6ce" meeting="false" start="2022-03-17" duration="6" complete="100" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
                 <depend id="10" type="2" difference="0" hardness="Strong"/>
@@ -53,11 +49,15 @@
             </task>
             <task id="20" name="catalogo consegnato" color="#8cb6ce" meeting="true" start="2022-04-14" duration="0" complete="0" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="2" name="Pianificazione" color="#8cb6ce" meeting="false" start="2022-03-31" duration="10" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
-            <task id="30" name="Matrice Responsabilità" color="#8cb6ce" meeting="false" start="2022-03-31" duration="10" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
+        <task id="2" name="Pianificazione" color="#8cb6ce" meeting="false" start="2022-03-31" duration="41" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true">
+            <task id="30" name="Matrice Responsabilità Iniziale" color="#8cb6ce" meeting="false" start="2022-03-31" duration="10" complete="0" thirdDate="2022-03-17" thirdDate-constraint="0" expand="true">
                 <depend id="31" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="31" name="Consegna Matrice Responsabilità" color="#8cb6ce" meeting="true" start="2022-04-14" duration="0" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+            <task id="45" name="Matrice Responsabilità Finale" color="#8cb6ce" meeting="false" start="2022-04-14" duration="31" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="46" name="Consegna Matrice Responsabilità Finale" color="#8cb6ce" meeting="true" start="2022-05-27" duration="0" complete="0" expand="true"/>
         </task>
         <task id="3" name="Analisi" meeting="false" start="2022-04-05" duration="21" complete="0" expand="true">
             <task id="27" name="Use Case di Contesto" color="#8cb6ce" meeting="false" start="2022-04-05" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
@@ -70,24 +70,49 @@
                 <depend id="33" type="1" difference="0" hardness="Strong"/>
                 <depend id="36" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="36" name="Activity Diagram Dario" color="#ff6600" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true"/>
+            <task id="36" name="Activity Diagram Dario" color="#ff6600" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="33" name="Use Case Aaron" color="#ffff00" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="34" type="1" difference="0" hardness="Strong"/>
                 <depend id="37" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="37" name="Activity Diagram Aaron" color="#ffff00" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true"/>
+            <task id="37" name="Activity Diagram Aaron" color="#ffff00" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="34" name="Use Case Fabio" color="#00ff33" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="35" type="1" difference="0" hardness="Strong"/>
                 <depend id="38" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="38" name="Activity Diagram Fabio" color="#00ff33" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true"/>
+            <task id="38" name="Activity Diagram Fabio" color="#00ff33" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="35" name="Use Case Simone" color="#0000cc" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="39" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="39" name="Activity Diagram Simone" color="#0000cc" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true"/>
+            <task id="39" name="Activity Diagram Simone" color="#0000cc" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Analisi Tecnologie" color="#8cb6ce" meeting="false" start="2022-04-14" duration="14" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="41" name="Preventivo Costi" color="#8cb6ce" meeting="false" start="2022-04-14" duration="14" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="44" name="Diagramma ER" color="#8cb6ce" meeting="false" start="2022-04-14" duration="14" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
         </task>
-        <task id="4" name="Sviluppo" meeting="false" start="2022-03-10" duration="1" complete="0" expand="true"/>
-        <task id="5" name="Rilascio" meeting="false" start="2022-03-10" duration="1" complete="0" expand="true"/>
+        <task id="4" name="Sviluppo" meeting="false" start="2022-05-05" duration="16" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <task id="42" name="Prototipo Applicazione Mobile" color="#8cb6ce" meeting="false" start="2022-05-05" duration="16" complete="0" thirdDate="2022-04-11" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" name="Piattaforma Web" color="#8cb6ce" meeting="false" start="2022-05-05" duration="16" complete="0" thirdDate="2022-04-11" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="5" name="Rilascio" color="#8cb6ce" meeting="true" start="2022-05-27" duration="0" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Simone Guida" function="Default:0" contacts="" phone=""/>
@@ -96,16 +121,12 @@
         <resource id="3" name="Dario Rahmatpour" function="Default:0" contacts="" phone=""/>
     </resources>
     <allocations>
-        <allocation task-id="25" resource-id="0" function="Default:0" responsible="false" load="45.0"/>
         <allocation task-id="8" resource-id="0" function="Default:0" responsible="false" load="40.0"/>
         <allocation task-id="10" resource-id="0" function="Default:0" responsible="false" load="33.0"/>
         <allocation task-id="12" resource-id="0" function="Default:0" responsible="false" load="20.0"/>
-        <allocation task-id="25" resource-id="1" function="Default:0" responsible="false" load="45.0"/>
         <allocation task-id="8" resource-id="1" function="Default:0" responsible="false" load="10.0"/>
-        <allocation task-id="25" resource-id="2" function="Default:0" responsible="false" load="5.0"/>
         <allocation task-id="8" resource-id="2" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="10" resource-id="2" function="Default:0" responsible="false" load="33.0"/>
-        <allocation task-id="25" resource-id="3" function="Default:0" responsible="false" load="5.0"/>
         <allocation task-id="8" resource-id="3" function="Default:0" responsible="false" load="40.0"/>
         <allocation task-id="10" resource-id="3" function="Default:0" responsible="false" load="34.0"/>
         <allocation task-id="32" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
