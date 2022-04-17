@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-21" view-index="0" gantt-divider-location="338" resource-divider-location="300" version="3.2.3240" locale="it_IT">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-28" view-index="0" gantt-divider-location="324" resource-divider-location="300" version="3.2.3240" locale="it_IT">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="182" order="0"/>
-        <field id="tpd4" name="Data dinizio" width="70" order="1"/>
-        <field id="tpd5" name="Data di fine" width="70" order="2"/>
+        <field id="tpd3" name="Nome" width="174" order="0"/>
+        <field id="tpd4" name="Data dinizio" width="67" order="1"/>
+        <field id="tpd5" name="Data di fine" width="67" order="2"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#000000 #00ffff #003333 #990099 #009999 #0000cc #00ff33 #ffff00 #ff6600]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="229" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="52" order="1"/>
+        <field id="0" name="Nome" width="236" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="60" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -61,28 +61,28 @@
             <task id="27" name="Use Case di Contesto" color="#8cb6ce" meeting="false" start="2022-04-05" duration="4" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="47" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="32" name="Use Case Dario" color="#00ffff" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <task id="32" name="Use Case Dario" color="#00ffff" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="33" type="1" difference="0" hardness="Strong"/>
                 <depend id="36" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="36" name="Activity Diagram Dario" color="#00ffff" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+            <task id="36" name="Activity Diagram Dario" color="#00ffff" meeting="false" start="2022-04-18" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="33" name="Use Case Aaron" color="#003333" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <task id="33" name="Use Case Aaron" color="#003333" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="34" type="1" difference="0" hardness="Strong"/>
                 <depend id="37" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="37" name="Activity Diagram Aaron" color="#003333" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+            <task id="37" name="Activity Diagram Aaron" color="#003333" meeting="false" start="2022-04-18" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="34" name="Use Case Fabio" color="#990099" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <task id="34" name="Use Case Fabio" color="#990099" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="35" type="1" difference="0" hardness="Strong"/>
                 <depend id="38" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="38" name="Activity Diagram Fabio" color="#990099" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+            <task id="38" name="Activity Diagram Fabio" color="#990099" meeting="false" start="2022-04-18" duration="4" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="35" name="Use Case Simone" color="#0000cc" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
