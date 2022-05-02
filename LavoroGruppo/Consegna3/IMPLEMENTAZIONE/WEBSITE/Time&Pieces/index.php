@@ -1,3 +1,37 @@
+<?php
+session_start();
+// Set session variables
+$_SESSION["uname"] = $_POST["uname"];
+$_SESSION["psw"] = $_POST["psw"];
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "tep";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT NOME, COGNOME, FOTO FROM utenti where USERNAME='".$_SESSION["uname"]."'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+	$_SESSION["nome"]=$row["NOME"];
+	$_SESSION["cognome"]=$row["COGNOME"];
+	$_SESSION["foto"]=$row["FOTO"];
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Miniport by HTML5 UP
@@ -25,11 +59,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/simo.png" alt="" /></span>
+							<span class="image fit"><img src="images/<?php echo ucfirst($_SESSION["foto"]);?>" alt="" /></span>
 						</div>
-						<div class="col-5 col-7-large col-12-medium">
+						<div class="col-6 col-7-large col-12-medium">
 							<header>
-								<h1>Ciao <strong>Simone</strong>.</h1>
+								<h1>Ciao <strong><?php echo ucfirst($_SESSION["nome"]); echo " ".ucfirst($_SESSION["cognome"]);?></strong>.</h1>
 							</header>
 							<p><strong>Benvenuto</strong>, gestisci i tuoi timesheet e le tue attività!</p>
 						</div>

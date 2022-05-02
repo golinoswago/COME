@@ -4,14 +4,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<?php
-session_start();
-if(isset($_SESSION["mail"])){
-	echo '<script>
-  alert("Mail inviata!");
-</script>';
-}
-?>
 <html>
 	<head>
 		<title>Miniport by HTML5 UP</title>
@@ -28,24 +20,16 @@ if(isset($_SESSION["mail"])){
 						<div class="col-6" style="background:url('images/login.jfif')">
 						</div>
 						<div class="col-6">
-							<form action="index.php" method="post">
+							<form action="sendmail.php" method="post" style="height: 27rem;">
 
 							  <div class="container">
-								<label for="uname"><b>Username</b></label>
-								<input type="text" id="username" placeholder="Enter Username" name="uname" required>
-
-								<label for="psw"><b>Password</b></label>
-								<input type="password" id="password" placeholder="Enter Password" name="psw" required>
-
-								<button type="submit">Login</button>
-								<label>
-								  <input type="checkbox" checked="checked" name="remember"> Remember me
-								</label>
+								<label for="uname"><b>Inserire mail di recupero:</b></label>
+								<input type="text" id="mail" placeholder="Enter Mail" name="mail" required>
+								<button type="submit">Invia mail</button>
 							  </div>
 
 							  <div class="container" style="background-color:#f1f1f1">
 								<button type="button" class="cancelbtn">Cancel</button>
-								<span class="psw">Forgot <a href="http://localhost/Time&Pieces/forgot.php">password?</a></span>
 							  </div>
 							</form>
 						</div>
