@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+	<!DOCTYPE HTML>
 <!--
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
@@ -14,13 +14,24 @@ if(isset($_SESSION["mail"])){
 ?>
 <html>
 	<head>
-		<title>Miniport by HTML5 UP</title>
+		<title>Time&Pieces - Login</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/login.css" />
+		<style>
+			#contact{
+				position : absolute;
+				bottom:0;
+				width:100vw;
+			}
+			.row > .col-6 {
+				width: 50%;
+				padding: 20% 0;
+				}
+		</style>
 	</head>
 	<body class="is-preload">
-
+	 
 		<!-- Home -->
 			<article>
 				<div class="">
@@ -31,15 +42,15 @@ if(isset($_SESSION["mail"])){
 							<form action="index.php" method="post">
 
 							  <div class="container">
-								<label for="uname"><b>Username</b></label>
+								<label for="uname"><b>Username:</b></label>
 								<input type="text" id="username" placeholder="Enter Username" name="uname" required>
 
-								<label for="psw"><b>Password</b></label>
+								<label for="psw"><b>Password:</b></label>
 								<input type="password" id="password" placeholder="Enter Password" name="psw" required>
 
 								<button type="submit">Login</button>
 								<label>
-								  <input type="checkbox" checked="checked" name="remember"> Remember me
+								  <input type="checkbox" checked="checked" name="remember"> Remember me:
 								</label>
 							  </div>
 
@@ -54,15 +65,19 @@ if(isset($_SESSION["mail"])){
 			</article>
 
 		<!-- Contact -->
-			<article id="contact" class="wrapperfooter style4">
-				<div class="container small">
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+				<article id="contact" class="wrapperfooter style4">
+						<footer>
+							<ul id="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>$
+							</ul>
+						</footer>
+					</div>
+				</article>
+			
+							</div>
+				<?php
+				endwhile;
+				
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -74,3 +89,5 @@ if(isset($_SESSION["mail"])){
 
 	</body>
 </html>
+
+^
