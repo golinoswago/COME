@@ -19,15 +19,7 @@ if(isset($_SESSION["mail"])){
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/login.css" />
 		<style>
-			#contact{
-				position : absolute;
-				bottom:0;
-				width:100vw;
-			}
-			.row > .col-6 {
-				width: 50%;
-				padding: 20% 0;
-				}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -36,9 +28,9 @@ if(isset($_SESSION["mail"])){
 			<article>
 				<div class="">
 					<div class="row">
-						<div class="col-6" style="background:url('images/login.jfif')">
+						<div class="col-7" style="background:url('images/login.jfif')">
 						</div>
-						<div class="col-6">
+						<div class="col-5">
 							<form action="index.php" method="post">
 
 							  <div class="container">
