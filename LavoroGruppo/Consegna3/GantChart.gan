@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-02-27" view-index="0" gantt-divider-location="324" resource-divider-location="300" version="3.1.3100" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-03-07" view-index="0" gantt-divider-location="307" resource-divider-location="300" version="3.2.3241" locale="it_IT">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Name" width="178" order="0"/>
-        <field id="tpd4" name="Begin date" width="71" order="1"/>
-        <field id="tpd5" name="End date" width="71" order="2"/>
+        <field id="tpd3" name="Nome" width="161" order="0"/>
+        <field id="tpd4" name="Data dinizio" width="64" order="1"/>
+        <field id="tpd5" name="Data di fine" width="66" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
         <option id="color.recent">
             <![CDATA[#000000 #00ffff #003333 #990099 #009999 #0000cc #00ff33 #ffff00 #ff6600]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="236" order="0"/>
-        <field id="1" name="Default role" width="60" order="1"/>
+        <field id="0" name="Nome" width="236" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="60" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -56,16 +57,16 @@
             </task>
         </task>
         <task id="47" name="Consegna2" color="#8cb6ce" meeting="true" start="2022-04-21" duration="0" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true"/>
-        <task id="3" name="Analisi" color="#000000" meeting="false" start="2022-04-05" duration="23" complete="0" thirdDate="2022-04-05" thirdDate-constraint="0" expand="true">
+        <task id="3" name="Analisi" color="#000000" meeting="false" start="2022-04-05" duration="24" complete="0" thirdDate="2022-04-05" thirdDate-constraint="0" expand="true">
             <task id="27" name="Use Case di Contesto" color="#8cb6ce" meeting="false" start="2022-04-05" duration="4" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="47" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="32" name="Use Case Dario" color="#00ffff" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <task id="32" name="Use Case Dario" color="#00ffff" meeting="false" start="2022-04-14" duration="4" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="33" type="1" difference="0" hardness="Strong"/>
                 <depend id="36" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="36" name="Activity Diagram Dario" color="#00ffff" meeting="false" start="2022-04-18" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
+            <task id="36" name="Activity Diagram Dario" color="#00ffff" meeting="false" start="2022-04-20" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="33" name="Use Case Aaron" color="#003333" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
@@ -73,7 +74,7 @@
                 <depend id="34" type="1" difference="0" hardness="Strong"/>
                 <depend id="37" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="37" name="Activity Diagram Aaron" color="#003333" meeting="false" start="2022-04-18" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+            <task id="37" name="Activity Diagram Aaron" color="#003333" meeting="false" start="2022-04-18" duration="8" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="34" name="Use Case Fabio" color="#990099" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
@@ -84,17 +85,17 @@
             <task id="38" name="Activity Diagram Fabio" color="#990099" meeting="false" start="2022-04-18" duration="4" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="35" name="Use Case Simone" color="#0000cc" meeting="false" start="2022-04-14" duration="7" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
+            <task id="35" name="Use Case Simone" color="#0000cc" meeting="false" start="2022-04-14" duration="2" complete="0" thirdDate="2022-03-07" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
                 <depend id="39" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="39" name="Activity Diagram Simone" color="#0000cc" meeting="false" start="2022-04-25" duration="7" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
+            <task id="39" name="Activity Diagram Simone" color="#0000cc" meeting="false" start="2022-04-18" duration="5" complete="0" thirdDate="2022-04-14" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="40" name="Analisi Tecnologie" color="#8cb6ce" meeting="false" start="2022-04-28" duration="6" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+            <task id="40" name="Analisi Tecnologie" color="#8cb6ce" meeting="false" start="2022-04-28" duration="7" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="41" name="Preventivo Costi" color="#8cb6ce" meeting="false" start="2022-04-28" duration="6" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+            <task id="41" name="Preventivo Costi" color="#8cb6ce" meeting="false" start="2022-04-28" duration="7" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="44" name="Diagramma ER" color="#8cb6ce" meeting="false" start="2022-04-21" duration="3" complete="0" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
